@@ -14,7 +14,7 @@ author: "Benno Joy (@bennojoy)"
 module: include_vars
 short_description: Load variables from files, dynamically within a task.
 description:
-     - Loads variables from a YAML/JSON file dynamically during task runtime.  It can work with conditionals, or use host specific variables to determine the path name to load from.
+     - Loads variables from a YAML/JSON file dynamically during task runtime.  It can work with conditionals, or use host specific variables to determine the path name to load from. Only files on the machine running Ansible can be loaded.
 options:
   file:
     version_added: "2.2"
